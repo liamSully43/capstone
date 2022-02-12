@@ -1,0 +1,23 @@
+{% extends "pages/layout.html" %}
+
+{% block body %}
+
+<h1 id="title">Simply Password</h1>
+<main id="register">
+    <!-- register form -->
+    <form action="/register" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Username" name="username" />
+        <input type="email" placeholder="Email" name="email" />
+        <input type="password" placeholder="Password" name="password" />
+        <input type="password" placeholder="Confirm Password" name="confirm" />
+        <input type="submit" value="Register" />
+    </form>
+    <!-- error message -->
+    {% if message %}
+        <p id="register-message">{{ message }}</p>
+    {% endif %}
+    <p>Already have an account? <a href="/login">login here</a>.</p>
+</main>
+
+{% endblock %}

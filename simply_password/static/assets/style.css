@@ -1,0 +1,359 @@
+:root {
+    --primary: #f7f6f4;
+    --secondary: #e9e9e9;
+    --accent: #d43737;
+    --text: #212121;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    color: var(--text);
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    background-color: var(--primary);
+}
+
+main {
+    width: 90vw;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color: var(--secondary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent);
+}
+
+button, .button {
+    background-color: var(--primary);
+    color: var(--text);
+    min-width: 90px !important;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    box-shadow: 1px 1px 30px -10px rgb(124, 124, 124);
+}
+
+button:hover, .button:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+    cursor: pointer;
+    filter: none !important;
+}
+
+.auth {
+    filter: brightness(0.95);
+}
+
+.auth:hover {
+    filter: brightness(1);
+    background-color: var(--primary);
+    color: var(--text);
+    box-shadow: 1px 1px 30px -10px rgb(255, 255, 255);
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    filter: brightness(0.8);
+}
+
+input, textarea {
+    color: var(--primary);
+}
+
+.hide {
+    display: none !important;
+    position: absolute !important;
+}
+
+form input {
+    display: block;
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: solid 1px var(--accent);
+    border-radius: 7px;
+    min-width: 300px;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    min-width: 45px;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+main {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px -20px grey;
+    position: relative;
+    top: -100px;
+    min-height: 400px;
+}
+
+#index {
+    min-width: 100vw;
+    height: 100vh;
+    background: linear-gradient(var(--accent), #cf4545);
+    padding: 0px;
+    border-radius: 0px;
+    box-shadow: none;
+    position: initial;
+}
+
+#index h1, #index h2 {
+    color: var(--primary);
+    text-align: center;
+    padding-top: 300px;
+    font-size: 60px;
+}
+
+#index h2 {
+    padding: 0px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+#index #login-register-container {
+    text-align: center;
+}
+
+#title {
+    width: 100vw;
+    padding: 200px 0px;
+    text-align: center;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 40px;
+}
+
+#login, #register {
+    max-width: 320px;
+}
+
+#login span, #register span {
+    color: var(--accent);
+    position: relative;
+    top: 30px;
+}
+
+#login p {
+    margin-top: 260px;
+}
+
+#register p {
+    margin-top: 175px;
+}
+
+#passwords h2 {
+    text-transform: capitalize;
+}
+
+#logout {
+    font-size: 14px;
+    float: right;
+    min-width: 0px !important;
+}
+
+#num-passwords {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#num-passwords button {
+    float: right;
+}
+
+#search {
+    width: calc(100% - 30px);
+    background-color: var(--primary);
+    padding: 15px;
+    box-shadow: 1px 1px 30px -20px rgb(124 124 124);
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+#search input {
+    width: calc(100% - 18px);
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 8px;
+    border: solid 1px var(--accent);
+    border-radius: 7px;
+}
+
+.passwords {
+    width: calc(100% - 30px);
+    display: flex;
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -20px rgb(124, 124, 124);
+    max-height: 50px;
+    margin-bottom: 20px;
+}
+
+.passwords input {
+    width: 180px;
+    min-width: 0px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.passwords .url {
+    width: 200px;
+}
+
+.passwords .update {
+    margin: 0px 0px 0px 260px;
+}
+
+.passwords .show {
+    min-width: 40px !important;
+    padding: 8px;
+    max-height: 33px;
+    box-shadow: 1px 1px 30px -7px rgb(124, 124, 124);
+}
+
+.passwords .show span {
+    filter: grayscale(1);
+}
+
+.passwords .delete {
+    background-color: var(--accent);
+    min-width: 80px !important;
+    padding: 8px;
+    max-height: 33px;
+    box-shadow: 1px 1px 30px -7px rgb(124, 124, 124);
+    margin-left: 15px;
+    color: var(--primary);
+}
+
+.passwords .delete:hover {
+    background-color: #f83c3c;
+    box-shadow: 1px 1px 15px -3px #f83c3c;
+}
+
+.passwords.updated input {
+    border-color: #37d466;
+    animation: borderUpdate 1s forwards 1s;
+}
+
+.passwords.updated input.update:hover {
+    background-color: #37d466;
+    animation: bothUpdate 1s forwards 1s;
+}
+
+.passwords.updated button.delete {
+    background-color: #37d466;
+    animation: buttonUpdate 1s forwards 1s;
+}
+
+@keyframes borderUpdate {
+    from {border-color: #37d466;}
+    to {border-color: var(--accent);}
+}
+
+@keyframes buttonUpdate {
+    from {background-color: #37d466;}
+    to {background-color: var(--accent);}
+}
+
+@keyframes bothUpdate {
+    from {
+        border-color: #37d466;
+        background-color: #37d466;
+    }
+    to {
+        border-color: var(--accent);
+        background-color: var(--accent);
+    }
+}
+
+.pop-up-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    display: grid;
+    place-items: center;
+}
+
+.pop-up-bg.hide .pop-up-container {
+    animation: none !important;
+}
+
+.pop-up-container {
+    width: 90%;
+    max-width: 320px;
+    background-color: var(--primary);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 1px 1px 30px -7px rgb(124, 124, 124);
+    animation: slide 0.3s linear;
+    position: relative;
+}
+
+.pop-up-container h2 {
+    margin-bottom: 20px;
+}
+
+.pop-up-container input[type="submit"] {
+    margin-top: 20px;
+}
+
+@keyframes slide {
+    from {
+        top: -15px;
+        opacity: 0.9;
+    }
+    to {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+#password-error {
+    color: var(--accent);
+}
+
+.deleted-password {
+    position: relative;
+    animation: deletedPassword 0.7s forwards;
+}
+
+@keyframes deletedPassword {
+    from {
+        left: 0px;
+        opacity: 1;
+    }
+    to {
+        left: 200px;
+        opacity: 0;
+    }
+}
+
+#register-message {
+    margin-top: 20px !important;
+    margin-bottom: -38px !important;
+}

@@ -1,0 +1,21 @@
+{% extends "pages/layout.html" %}
+
+{% block body %}
+
+<h1 id="title">Simply Password</h1>
+<main id="login">
+    <!-- login form -->
+    <form action="/login" method="post">
+        {% csrf_token %}
+        <input type="text" placeholder="Username" name="username" />
+        <input type="password" placeholder="Password" name="password" />
+        <input type="submit" value="Login" />
+    </form>
+    <!-- error message -->
+    {% if message %}
+        <span>{{ message }}</span>
+    {% endif %}
+    <p>Don't have an account? <a href="/register">Register here</a>.</p>
+</main>
+
+{% endblock %}
